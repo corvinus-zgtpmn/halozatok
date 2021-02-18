@@ -25,7 +25,9 @@ namespace _2.het.zgtpmn
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseHttpsRedirection();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
@@ -38,3 +40,4 @@ namespace _2.het.zgtpmn
         }
     }
 }
+
