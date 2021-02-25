@@ -1,0 +1,70 @@
+﻿body { background-color:aquamarine;
+}
+div {
+    border: 3px solid fuchsia;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: fuchsia;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: fuchsia;
+    font-size: 20px;
+}
+
+#lista {
+    background-color: lightgrey;
+}
+
+.feher {
+    background-color: #511543;
+    border-radius: 25px;
+    color: white;
+    width: 250px;
+}
+
+.dolt {
+    font-style: italic;
+}
+
+.kepessegek {
+    background-color: lightgrey;
+    border-radius: 25px;
+    width: 350px;
+}
+
+#extra {
+    background-color: #511543
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+span.rick {font-size: 20px;
+       font-weight:bold;
+       color:#ff6a00;
+
+}
+p {
+font-style:italic;}
+p.plus {font-style:initial;
+       color:forestgreen;
+}
