@@ -13,6 +13,18 @@ namespace _2.het.zgtpmn.Controllers
     public class BoatController : ControllerBase
     {
         [HttpGet]
+        [Route("questions/{sorszám}")]
+        public ActionResult M2(int sorszám)
+        {
+            hajostesztContext context = new hajostesztContext();
+            var kérdés = (from x in context.Questions
+                           where x.QuestionId==sorszám
+                           select x).FirstOrDefault();
+            if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
+
+            return new JsonResult(kérdés);
+        }
+        [HttpGet]
         [Route("questions/all")]
         public ActionResult M1()
         {
