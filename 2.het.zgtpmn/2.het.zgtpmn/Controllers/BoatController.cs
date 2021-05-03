@@ -33,5 +33,14 @@ namespace _2.het.zgtpmn.Controllers
 
             return new JsonResult(kérdések);
         }
+        [HttpGet]
+        [Route("questions/count")]
+        public int M4() //Tetszőleges metódusnév
+        {
+            hajostesztContext context = new hajostesztContext();
+            int kérdésekSzáma = context.Questions.Count();
+
+            return kérdésekSzáma;
+        }
     }
 }
